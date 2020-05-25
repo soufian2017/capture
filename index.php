@@ -1,6 +1,6 @@
 <?php
   $f = fopen("data.txt", "w+");
-  foreach($_GET as $data){
+  foreach($_REQUEST as $data){
     fwrite($f, $data."\n");
   }
   $fclose($f);
